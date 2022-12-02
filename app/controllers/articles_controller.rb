@@ -1,9 +1,5 @@
 class ArticlesController < ApplicationController
   def index
-    if params[:query].present?
-      @articles = Article.where("title LIKE ?", "#{params[:query]}%")
-    else
-      @articles = Article.all
-    end
+    @articles = Article.search_articles(params)
   end
 end
