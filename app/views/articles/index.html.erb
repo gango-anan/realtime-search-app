@@ -1,2 +1,13 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<h1>Real Time Article Search</h1>
+<div class="search-bar" >
+    <%= form_with(url: articles_path, method: :get, data: { turbo_frame: "articles" }) do |form| %>
+        <%= form.label :query, "Search by article title" %>
+        <div>
+            <%= form.text_field :query, placeholder: "Search article" %>
+            <%= form.submit "Search" %>
+        </div>
+    <% end %>
+</div>
+
+
+
