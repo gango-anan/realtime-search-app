@@ -1,0 +1,4 @@
+<div class="search-history">
+    <h4><%= search_history.article.title %></h4>
+    <p>Searched <%= pluralize(search_count(@search_histories)[search_history.article.title], 'time') %></p>
+</div>

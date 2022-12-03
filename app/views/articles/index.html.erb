@@ -1,6 +1,6 @@
 <h1>Real Time Article Search</h1>
 <div class="search-bar" >
-    <%= form_with(url: articles_path, method: :get, data: { turbo_frame: "search-results", turbo_action: "advance", controller: "search", action: "input->search#submit" }) do |form| %>
+    <%= form_with(url: articles_path, method: :get, data: { turbo_frame: "search-history", turbo_frame: "search-results", turbo_action: "advance", controller: "search", action: "input->search#submit" }) do |form| %>
         <%= form.label :query, "Search by article title" %>
         <div>
             <%= form.text_field :query, placeholder: "Search article" %>
@@ -9,6 +9,11 @@
     <% end %>
 </div>
 
-<div>
-    <%= render "articles", articles: @articles %>
+<div style="display: flex;" >
+    <div>
+        <%= render "articles", articles: @articles %>
+    </div>
+    <div style="margin-left: 500px;">
+        <%= render @search_histories %>
+    </div>
 </div>
