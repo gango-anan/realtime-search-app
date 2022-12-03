@@ -1,9 +1,13 @@
-<div class="search-bar" >
-    <%= form_with(url: articles_path, method: :get, data: { turbo_frame: "search-history", turbo_frame: "search-results", turbo_action: "advance", controller: "search", action: "input->search#submit" }) do |form| %>
-        <%= form.label :query, "Search by article title" %>
-        <div>
-            <%= form.text_field :query, placeholder: "Search article" %>
-            <%= form.submit "Search" %>
+<div>
+    <%= form_with(url: articles_path, method: :get, data: { turbo_frame: "search-history", turbo_frame: "search-results", turbo_action: "advance", controller: "search", action: "input->search#submit" }, class: "search-form") do |form| %>
+        <div class="search-bar">
+            <div>
+                <%= form.label :query, "Search by article title", class: "search-label" %>
+            </div>
+            <div>
+                <%= form.text_field :query, placeholder: "Search article", class: "search-area" %>
+                <%= form.submit "Search", class: "search-button" %>
+            </div>
         </div>
     <% end %>
 </div>

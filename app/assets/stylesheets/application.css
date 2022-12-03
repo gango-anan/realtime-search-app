@@ -26,3 +26,30 @@
   .main-title {
     text-align: center;
   }
+
+  .search-form {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 90%;
+    margin: auto;
+  }
+
+  .search-label {
+    font-size: 24px;
+  }
+
+  .search-area {
+    height: 32px;
+    width: 70%;
+    padding: 10px;
+    outline: none;
+  }
+
+  .search-button {
+    height: 32px;
+    width: 160px;
+    font-size: 18px;
+  }
+
