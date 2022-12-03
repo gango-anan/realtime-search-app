@@ -23,9 +23,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_03_155244) do
   end
 
   create_table "search_histories", force: :cascade do |t|
-    t.integer "article_id"
+    t.bigint "article_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["article_id"], name: "index_search_histories_on_article_id"
   end
 
 end
