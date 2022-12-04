@@ -1,5 +1,6 @@
 class SearchHistory < ApplicationRecord
     belongs_to :article
+    validates :article_id, presence: true
 
     def analyzed_search_history
         ActiveRecord::Base.connection.exec_query(query_searched_articles)

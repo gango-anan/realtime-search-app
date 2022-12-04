@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe SearchHistory, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'validate presence of article' do
+    it { should validate_presence_of(:article_id) }
+  end
+
+  describe 'association' do
+    it { should belong_to(:article) }
+  end
 end
