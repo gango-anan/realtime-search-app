@@ -87,7 +87,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://www.realtimesearch.com)
+- [Live Demo Link](https://realtime-search-app.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
