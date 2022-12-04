@@ -1,5 +1,7 @@
 class Article < ApplicationRecord
     has_many :search_histories
+    validates :title, presence: true
+    validates :body, presence: true
 
     def self.search_articles(params)
         @search_results = params[:query].blank? ? [] : where("title LIKE ?", "%#{sanitize_sql_like(params[:query])}%")
