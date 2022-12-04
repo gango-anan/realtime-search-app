@@ -1,7 +1,6 @@
 <div class="trending-article">
-    <p class="trending-article-title"><%= search_history.article.title %></p>
-    <p><%= search_history.article.body %></p>
+    <p class="trending-article-title"><%= search_history["title"] %></p>
     <div class="search-times">
-        <em>Searched <%= pluralize(search_count(@search_histories)[search_history.article.title], 'time') %></em>
+        <em>Searched <%= pluralize(search_history["number_of_times_searched"], 'time') %></em>
     </div>
 </div>
