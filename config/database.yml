@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: realtime_search_app_production
-  username: realtime_search_app
-  password: <%= ENV["REALTIME_SEARCH_APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
