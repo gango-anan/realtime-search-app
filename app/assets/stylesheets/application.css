@@ -59,6 +59,23 @@
     margin-top: 32px;
   }
 
+  .current-search-articles {
+    padding: 16px;
+  }
+
+  .current-search-article {
+    margin: 16px;
+    color: rgb(148, 128, 128);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .current-search-article:hover {
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+
   .trending-articles {
     padding: 15px;
     border: 1px solid rgb(204, 202, 202);
