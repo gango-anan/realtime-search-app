@@ -1,7 +1,7 @@
-<div>
-    <%= form_with(url: articles_path, method: :get, data: { turbo_frame: "search-history", turbo_frame: "search-results", turbo_action: "advance", controller: "search", action: "input->search#submit" }, class: "search-form") do |form| %>
+<div class="search-form">
+    <%= form_with(url: articles_path, method: :get, data: { turbo_frame: "search-history", turbo_frame: "search-results", turbo_action: "advance", controller: "search", action: "input->search#submit" }) do |form| %>
         <div class="search-bar">
-            <div>
+            <div class="search-area-label-container">
                 <%= form.label :query, "Search by article title", class: "search-label" %>
             </div>
             <div>
