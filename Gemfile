@@ -72,5 +72,6 @@ group :test do
   gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
   gem 'shoulda-matchers', '~> 5.2'
   gem 'faker', '~> 3.0'
+  gem 'selenium-webdriver', '~> 4.7', '>= 4.7.1'
 end
 
