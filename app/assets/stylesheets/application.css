@@ -53,3 +53,28 @@
     font-size: 18px;
   }
 
+  .searches {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
+  .trending-articles {
+    padding: 15px;
+    border: 1px solid rgb(204, 202, 202);
+  }
+
+  .trending-article {
+    margin: 16px;
+  }
+
+  .trending-article-title {
+    color: rgb(177, 168, 168);
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .search-times {
+    color: red;
+    text-align:right;
+  }

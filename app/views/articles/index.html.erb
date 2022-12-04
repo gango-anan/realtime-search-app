@@ -12,11 +12,13 @@
     <% end %>
 </div>
 
-<div>
-    <div>
+<section class="searches">
+    <article>
+        <h2>Your search results</h2>
         <%= render "articles", articles: @articles %>
-    </div>
-    <div>
+    </article>
+    <article class="trending-articles">
+        <h2>Trending articles</h2>
         <%= render @search_histories %>
-    </div>
-</div>
+    </article>
+</section>
