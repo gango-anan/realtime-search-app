@@ -87,7 +87,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://realtime-search-app.onrender.com)
+- [Live Demo Link](https://real-time-search-app.herokuapp.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,12 +117,13 @@ Clone this repository to your desired folder, eg my-folder
 
 ### Install
 
-Install this project with:
+In the folder where you cloned the repository, open terminal and run the folloing commands
+
 ```
-  In the folder where you cloned the repository
-  open terminal and run the folloing commands
   cd realtime-search-app
+
   bundle install
+
   yarn install
 ```
 
@@ -135,8 +136,10 @@ To inialize the project run the following commands
 
 ```
 bin/rails db:create
+
 bin/rails db:migrate
 
+bin/rails db:seed
 ```
 
 ### Run tests
@@ -152,7 +155,12 @@ When all the tests pass you can proceed and run the application
 
 ```
 run rails server
+
 open the application in the browser by following the link http://localhost:3000
+```
+
+```
+Check out the seed file for some sample data to use for testing the app
 ```
 
 
