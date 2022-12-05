@@ -13,11 +13,11 @@
 </div>
 <section class="searches">
     <article class="current-search-articles">
-        <h2>Your search results</h2>
-        <%= render "articles", articles: @articles %>
+        <%= turbo_frame_tag "search-results" do %>
+            <h2>Your search results</h2>
+        <% end %>
     </article>
     <article class="trending-articles">
         <h2>Trending articles</h2>
-        <%= render partial: "search_histories/search_history", collection: @search_histories %>
     </article>
 </section>
