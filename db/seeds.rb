@@ -18,3 +18,20 @@
     {title: "Learning C++ the hard way", body: "The most read C++ article"}
 ].each { |article| Article.create(article) }
 
+[
+    {article_id: 1},
+    {article_id: 2},
+    {article_id: 3},
+    {article_id: 4},
+    {article_id: 5},
+    {article_id: 6},
+    {article_id: 7},
+    {article_id: 2},
+    {article_id: 1},
+    {article_id: 2},
+    {article_id: 2},
+    {article_id: 8},
+    {article_id: 2},
+    {article_id: 2},
+    {article_id: 1}
+  ].each { |search| SearchHistory.create(search) }
