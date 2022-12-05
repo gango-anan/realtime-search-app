@@ -113,3 +113,27 @@
     color: red;
     text-align:right;
   }
+
+  .form-data {
+    width: 70%;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #9ca1a1;
+    outline: 0;
+  }
+
+  .submit-buttons {
+    height: 48px;
+    width: 20%;
+    font-size: 18px;
+    border: 1px solid gray;
+  }
+
+  .form-label {
+    margin: 16px;
+  }
+
+  .form-input, .form_button {
+    margin: 18px;
+  }
