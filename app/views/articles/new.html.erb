@@ -1,0 +1,22 @@
+<div class="search-form">
+    <h2>New Aricle</h2>
+    <%= form_with(model: @article, method: :post ) do |form| %>
+        <div>
+            <div class="form-label">
+                <%= form.label :title, "Title" %>
+            </div>
+            <div class="form-input">
+                <%= form.text_field :title, placeholder: "Add title", class: "search-area" %>
+            </div>
+            <div class="form-label">
+                <%= form.label :body, "Body" %>
+            </div>
+            <div class="form-input">
+                <%= form.text_field :body, placeholder: "Add body", class: "search-area" %>
+            </div>
+            <div class="form_button">
+                <%= form.submit "Add article", class: "search-button" %>
+            </div>
+        </div>
+    <% end %>
+</div>

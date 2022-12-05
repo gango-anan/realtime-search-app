@@ -1,0 +1,16 @@
+<div class="search-form">
+    <h2>New Search History</h2>
+    <%= form_with(model: @search_history, method: :post ) do |form| %>
+        <div>
+            <div class="form-label">
+                <%= form.label :article_id, "Article id" %>
+            </div>
+            <div class="form-input">
+                <%= form.text_field :article_id, placeholder: "Article id", class: "form-data" %>
+            </div>
+            <div class="form_button">
+                <%= form.submit "Add search history", class: "submit-buttons" %>
+            </div>
+        </div>
+    <% end %>
+</div>
